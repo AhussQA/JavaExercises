@@ -20,6 +20,23 @@ public class Level2 {
         pList.add(p2);
         pList.add(p3);
         System.out.println(Person.findPerson("A",pList));
+        System.out.println("HEEEEEEELO");
+        Garage garage = new Garage();
+        Car c = new Car();
+        Motorcycle m = new Motorcycle();
+        Truck t = new Truck();
+        garage.add(c);
+        garage.add(t);
+        garage.add(m);
+        garage.billCalcAll();
+        garage.fix(c);
+        garage.remove(c.id);
+        garage.remove(Truck.class);
+        //garage.emptyGarage();
+        System.out.println("Garage: "+garage);
+
+
+
     }
 
     public int blackjack(int a, int b){
